@@ -1,13 +1,20 @@
 #' @export
+#' @name boxplot_w_points
+#' @title boxplot_w_points
 #' @param data a vector of numeric values
 #' @param horiz logical indicating if the boxplots should be horizontal; default FALSE means vertical boxes.
 #' @param main string indicating the title of the plot
+#' @param col color of the points to be added to the boxplot
 #' @param nticks an integer specifying the number of ticks to show
-#' @example
+#' @importFrom grDevices col2rgb rgb
+#' @importFrom graphics axis boxplot mtext par stripchart
+#' @examples
+#' \dontrun{
 #' set.seed(12456)
-#'boxplot_w_points(data = rnorm(100), horiz = T, main="data")
+#'boxplot_w_points(data = rnorm(100), horiz = TRUE, main="data")
 #'set.seed(12456)
-#'boxplot_w_points(data = rnorm(100), horiz = F, main="data")
+#'boxplot_w_points(data = rnorm(100), horiz = FALSE, main="data")
+#'}
 boxplot_w_points = function(data, col = "#CCCCCC7F", horiz = F, main = "", nticks = 8L){
 
 
