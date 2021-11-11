@@ -4,7 +4,7 @@
 \alias{boxplot_w_points}
 \title{boxplot_w_points}
 \usage{
-boxplot_w_points(data, col = "#CCCCCC7F", horiz = F, main = "", nticks = 8L)
+boxplot_w_points(data, col = "#CCCCCC7F", horiz = F, main = "")
 }
 \arguments{
 \item{data}{a vector of numeric values}
@@ -14,8 +14,6 @@ boxplot_w_points(data, col = "#CCCCCC7F", horiz = F, main = "", nticks = 8L)
 \item{horiz}{logical indicating if the boxplots should be horizontal; default FALSE means vertical boxes.}
 
 \item{main}{string indicating the title of the plot}
-
-\item{nticks}{an integer specifying the number of ticks to show}
 }
 \description{
 boxplot_w_points
@@ -23,8 +21,8 @@ boxplot_w_points
 \examples{
 \dontrun{
 set.seed(12456)
-boxplot_w_points(data = rnorm(100), horiz = TRUE, main="data")
+boxplot_w_points(data = rnorm(100), horiz = TRUE, main = "data")
 set.seed(12456)
-boxplot_w_points(data = rnorm(100), horiz = FALSE, main="data")
+boxplot_w_points(data = rnorm(100), horiz = FALSE, main = "data")
 }
 }
