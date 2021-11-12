@@ -41,6 +41,7 @@ boxplot_w_points <- function(data, col = "#CCCCCC7F", horiz = F, main = "") {
     boxplot(data, col = "white", horizontal = TRUE, add = T, axes = F, outline = F)
 
     # Points
+    set.seed(123)
     stripchart(data,
       method = "jitter",
       pch = 19,
@@ -66,6 +67,7 @@ boxplot_w_points <- function(data, col = "#CCCCCC7F", horiz = F, main = "") {
     # vertical box plot
     boxplot(data, col = "white", horizontal = F, add = T, axes = F, outline = F, main = main)
     axis(2)
+    set.seed(123)
     # Points
     stripchart(data,
       method = "jitter",
