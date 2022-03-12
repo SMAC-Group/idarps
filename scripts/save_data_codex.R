@@ -1,7 +1,5 @@
 # Libraries
 library(ggplot2)
-library(ggdist)
-library(ggfortify)
 library(MASS)
 library(colorspace)
 

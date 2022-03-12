@@ -9,80 +9,63 @@
 #' @importFrom graphics axis boxplot mtext par stripchart
 #' @examples
 #' \dontrun{
-#' set.seed(12456)
-#' boxplot_w_points(data = rnorm(100), horiz = TRUE, main = "data")
-#' set.seed(12456)
-#' boxplot_w_points(data = rnorm(100), horiz = FALSE, main = "data")
+#' x = rnorm(20, mean=5)
+#' y = rnorm(20, mean=10)
+#' z = rnorm(20, mean=15)
+#' boxplot_w_points(x, main = "test")
+#' boxplot_w_points(x,y,z, names = c("x","y", "z"), horizontal = F, las=1, main="data")
 #' }
-boxplot_w_points <- function(data, col = "#CCCCCC7F", horiz = F, main = "") {
+boxplot_w_points <- function(..., col =  "#FFB3DACC",
+                             col_boxplot ="#d2d2d2",
+                             horizontal = F, main = "", names,
+                             log = "",
+                             las=0
+                            ) {
 
-  # set.seed(123)
-  # data = rnorm(100)
-  # col = "#CCCCCC7F"
-  # horiz = F
-  # main = ""
 
-  min_val <- floor(min(data))
-  max_val <- ceiling(max(data))
+  data = list(...)
+  nbr_of_var = length(data)
 
-  if (horiz) {
-    # change margin
-    par(mar = c(3.8, 2, 1, 2))
+  min_val <- floor(min(unlist(data)))
+  max_val <- ceiling(max(unlist(data)))
 
-    # draw empty plot
-    plot(NA,
-      type = "n", axes = FALSE, ann = FALSE, xaxt = "n", yaxt = "n",
-      xlim = c(min_val, max_val),
-      ylim = c(0, 2)
-    )
-    #axis
-    axis(1)
+
+
+  if (horizontal) {
     # Horizontal box plot
-    boxplot(data, col = "white", horizontal = TRUE, add = T, axes = F, outline = F)
 
-    # Points
+    boxplot(data, col = col_boxplot, horizontal = TRUE,
+            main = main, names = names, add = F, axes = T,
+            outline = F,log=log, las=las)
+
+    # points
     set.seed(123)
     stripchart(data,
       method = "jitter",
+      jitter=.2,
       pch = 19,
       cex = 1.2,
       col = col,
       add = TRUE
     )
-
-    # title
-    mtext(main, cex = 1.5, line = -5.5)
   } else {
 
-    # change margin
-    par(mar = c(1, 5.5, 3, 1))
+    boxplot(data, col = col_boxplot, horizontal = F,
+            main = main, names = names, add = F, axes = T,
+            outline = F,log=log, las=las)
 
-    plot(NA,
-      type = "n", axes = FALSE, ann = FALSE, xaxt = "n", yaxt = "n",
-      ylim = c(min_val, max_val),
-      xlim = c(0, 2)
-    )
-
-
-    # vertical box plot
-    boxplot(data, col = "white", horizontal = F, add = T, axes = F, outline = F, main = main)
-    axis(2)
+    # axis(2)
     set.seed(123)
+
     # Points
     stripchart(data,
       method = "jitter",
+      jitter = .2,
       pch = 19,
       col = col,
       cex = 1.2,
       vertical = TRUE,
       add = TRUE
     )
-
-    # title
-    mtext(main, cex = 1.5, line = .8)
   }
-  # margin back to default
-  par(mar = c(5.1, 4.1, 4.1, 2.1))
 }
-
-
