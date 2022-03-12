@@ -1,0 +1,15 @@
+#' Intensive care admission and death of COVID_19 patients in a secondary care hospital in Belgium
+#'
+#' A dataset containing attributes of COVID_19 patients admitted for intensive care admission in Belgium
+#'
+#' @format A data frame with 64 rows and 5 variables:
+#' \describe{
+#'   \item{icu}{admission to ICU, binary (0 for no, 1 for yes)}
+#'   \item{sex}{sex}
+#'   \item{age}{age in year}
+#'   \item{ldh}{lactate dehydrogenase in U/L}
+#'   \item{spo2}{oxygen saturation}
+#'
+#' }
+#' @source \url{http://www.diamondse.info/}
+"covid"
