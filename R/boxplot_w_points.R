@@ -24,16 +24,16 @@
 #' boxplot_w_points(x, y, z, names = c("x", "y", "z"), horizontal = T, las = 1, main = "Data")
 #' boxplot_w_points(x, y, z, names = c("x", "y", "z"), horizontal = F, las = 1, main = "Data")
 boxplot_w_points <- function(...,
-                             col_points = "#FFC2E299",
+                             col_points = "#9033FF3F",
                              col_boxplot = "#d2d2d2",
                              horizontal = F,
                              main = "",
-                             names = NA,
+                             names = NULL,
                              las = 0,
                              xlab = "",
                              ylab = "",
                              seed = 123,
-                             jitter_param = .2) {
+                             jitter_param = .3) {
 
 
   # list all vectors
@@ -41,27 +41,26 @@ boxplot_w_points <- function(...,
 
   # check equal dimension between # of vectors provided and length of argument names if provided
   # provide error if so
-  if (!is.null(names) && (length(names) != length(data))) {
-    stop(paste(
-      "Mismatch between length of argument 'names', ",
-      length(names),
-      " and the number of data vectors provided: ",
-      length(data)
-    ))
+  if (is.null(names) && (length(names) != length(data))) {
+    names = as.character(substitute(...()))
   }
 
   # boxplot all vectors
-  boxplot(data,
-    col = col_boxplot,
-    horizontal = horizontal,
-    main = main,
-    names = names,
-    las = las,
-    xlab = xlab,
-    ylab = ylab,
-    add = F, axes = T,
-    outline = F
-  )
+    boxplot(data,
+            col = col_boxplot,
+            horizontal = horizontal,
+            main = main,
+            names = names,
+            las = las,
+            xlab = xlab,
+            ylab = ylab,
+            add = F,
+            axes = T,
+            outline = F,
+            ylim = range(data)
+    )
+
+
 
   # points
   set.seed(seed)
