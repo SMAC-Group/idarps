@@ -1,71 +1,70 @@
 #' @export
 #' @name boxplot_w_points
 #' @title boxplot_w_points
-#' @param data a vector of numeric values
-#' @param horiz logical indicating if the boxplots should be horizontal; default FALSE means vertical boxes.
+#' @param ... data vectors to be visualized
+#' @param col_points color of the points to be added to the boxplot
+#' @param col_boxplot color of the boxplot
+#' @param horizontal logical indicating if the boxplots should be horizontal; default FALSE means vertical boxes.
 #' @param main string indicating the title of the plot
-#' @param col color of the points to be added to the boxplot
+#' @param names vector of string indicating the group labels which will be printed under each boxplot.
+#' @param names vector of string indicating the group labels which will be printed under each boxplot.
+#' @param log character indicating if x or y or both coordinates should be plotted in log scale.
+#' @param las a numeric value indicating the orientation of the tick mark labels and any other text added to a plot after its initialization. The options are as follows: always parallel to the axis (the default, 0), always horizontal (1), always perpendicular to the axis (2), and always vertical (3).
+#' @param xlab a string indicating the x label
+#' @param ylab a string indicating the y label
+#' @param seed an integer specifying a seed for the random jitter of the boxplot points
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom graphics axis boxplot mtext par stripchart
 #' @examples
 #' \dontrun{
-#' x = rnorm(20, mean=5)
-#' y = rnorm(20, mean=10)
-#' z = rnorm(20, mean=15)
+#' x <- rnorm(20, mean = 5)
+#' y <- rnorm(20, mean = 10)
+#' z <- rnorm(20, mean = 15)
 #' boxplot_w_points(x, main = "test")
-#' boxplot_w_points(x,y,z, names = c("x","y", "z"), horizontal = F, las=1, main="data")
+#' boxplot_w_points(x, y, z, names = c("x", "y", "z"), horizontal = T, las = 1, main = "Data")
 #' }
-boxplot_w_points <- function(..., col =  "#FFB3DACC",
-                             col_boxplot ="#d2d2d2",
-                             horizontal = F, main = "", names,
+boxplot_w_points <- function(...,
+                             col_points = "#FFC2E299",
+                             col_boxplot = "#d2d2d2",
+                             horizontal = F,
+                             main = "",
+                             names = NA,
                              log = "",
-                             las=0
-                            ) {
+                             las = 0,
+                             xlab = "",
+                             ylab = "",
+                             seed = 123) {
+  # list all vectors
+  data <- list(...)
 
-
-  data = list(...)
-  nbr_of_var = length(data)
-
-  min_val <- floor(min(unlist(data)))
-  max_val <- ceiling(max(unlist(data)))
-
-
-
-  if (horizontal) {
-    # Horizontal box plot
-
-    boxplot(data, col = col_boxplot, horizontal = TRUE,
-            main = main, names = names, add = F, axes = T,
-            outline = F,log=log, las=las)
-
-    # points
-    set.seed(123)
-    stripchart(data,
-      method = "jitter",
-      jitter=.2,
-      pch = 19,
-      cex = 1.2,
-      col = col,
-      add = TRUE
-    )
-  } else {
-
-    boxplot(data, col = col_boxplot, horizontal = F,
-            main = main, names = names, add = F, axes = T,
-            outline = F,log=log, las=las)
-
-    # axis(2)
-    set.seed(123)
-
-    # Points
-    stripchart(data,
-      method = "jitter",
-      jitter = .2,
-      pch = 19,
-      col = col,
-      cex = 1.2,
-      vertical = TRUE,
-      add = TRUE
-    )
+  # check equal dimension between # of vectors provided and length of argument names if provided
+  # provide error if so
+  if (!is.null(names) && length(names) != length(data)) {
+    stop(paste(
+      "Mismatch between length of argument 'names', ",
+      length(names),
+      " and the number of data vectors provided: ",
+      length(data)
+    ))
   }
+
+  # boxplot all vectors
+  boxplot(data,
+    col = col_boxplot, horizontal = horizontal,
+    main = main, names = names, add = F, axes = T,
+    outline = F, log = log, las = las, xlab = xlab, ylab = ylab, log
+  )
+
+  # points
+  set.seed(seed)
+  stripchart(data,
+    method = "jitter",
+    jitter = .2,
+    pch = 19,
+    cex = 1.2,
+    col = col_points,
+    add = TRUE,
+    vertical = !horizontal
+  )
 }
+

@@ -4,25 +4,35 @@
 \alias{boxplot_w_points}
 \title{boxplot_w_points}
 \usage{
-boxplot_w_points(data, col = "#CCCCCC7F", horiz = F, main = "")
+boxplot_w_points(
+  ...,
+  col = "#FFB3DACC",
+  col_boxplot = "#d2d2d2",
+  horizontal = F,
+  main = "",
+  names,
+  log = "",
+  las = 0
+)
 }
 \arguments{
-\item{data}{a vector of numeric values}
-
 \item{col}{color of the points to be added to the boxplot}
 
-\item{horiz}{logical indicating if the boxplots should be horizontal; default FALSE means vertical boxes.}
+\item{horizontal}{logical indicating if the boxplots should be horizontal; default FALSE means vertical boxes.}
 
 \item{main}{string indicating the title of the plot}
+
+\item{data}{a vector of numeric values}
 }
 \description{
 boxplot_w_points
 }
 \examples{
 \dontrun{
-set.seed(12456)
-boxplot_w_points(data = rnorm(100), horiz = TRUE, main = "data")
-set.seed(12456)
-boxplot_w_points(data = rnorm(100), horiz = FALSE, main = "data")
+x = rnorm(20, mean=5)
+y = rnorm(20, mean=10)
+z = rnorm(20, mean=15)
+boxplot_w_points(x, main = "test")
+boxplot_w_points(x,y,z, names = c("x","y", "z"), horizontal = F, las=1, main="data")
 }
 }
