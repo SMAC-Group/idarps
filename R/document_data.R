@@ -2,19 +2,19 @@
 #'
 #' Intensive care admission of COVID-19 patients in Belgium
 #'
-#' Data from Parisi, et al., (2021) which studies the applicability of predictive models for intensive care
+#' @description Data from Parisi, et al., (2021) which studies the applicability of predictive models for intensive care
 #' admission of COVID-19 patients in a secondary care hospital in Belgium. This study is based on data of
 #' patients admitted to an emergency department with a positive RT-PCR SARS-CoV-2 test.
 #'
 #' @format A data frame with 64 rows and 5 variables:
 #' \describe{
-#'   \item{icu}{admission to an Intensive Care Unit (ICU), binary (0 for no, 1 for yes)}
+#'   \item{icu}{admission to an Intensive Care Unit, binary (0 for no, 1 for yes)}
 #'   \item{sex}{sex, binary (men, women)}
 #'   \item{age}{age in year}
 #'   \item{ldh}{lactate dehydrogenase in U/L}
-#'   \item{spo2}{oxygen saturation in %}
-#'
+#'   \item{spo2}{oxygen saturation in (percentage)}
 #' }
+#'
 #' @references Parisi, Nicolas, et al. "Non applicability of validated predictive models for intensive care admission and death of COVID-19 patients in a secondary care hospital in Belgium.", Journal of Emergency and Critical Care Medicine, (2021).
 #' @source \url{https://jeccm.amegroups.com/article/view/6927/html}
 "covid"

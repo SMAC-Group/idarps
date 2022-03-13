@@ -5,7 +5,14 @@
 \alias{covid}
 \title{Intensive care admission of COVID-19 patients in Belgium}
 \format{
-
+A data frame with 64 rows and 5 variables:
+\describe{
+  \item{icu}{admission to an Intensive Care Unit, binary (0 for no, 1 for yes)}
+  \item{sex}{sex, binary (men, women)}
+  \item{age}{age in year}
+  \item{ldh}{lactate dehydrogenase in U/L}
+  \item{spo2}{oxygen saturation in (percentage)}
+}
 }
 \source{
 \url{https://jeccm.amegroups.com/article/view/6927/html}
