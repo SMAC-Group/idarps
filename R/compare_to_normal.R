@@ -23,6 +23,7 @@ hist_compare_to_normal <- function(x,
                                    col_line = "#ff160e",
                                    add_estimated_param = T,
                                    legend_position = "topleft",
+                                   delta = 0.05,
                                    ...) {
   # x = rnorm(1000)
   # col = "lightgray"
@@ -35,8 +36,8 @@ hist_compare_to_normal <- function(x,
   # legend_position = "topleft"
 
   # compute min and max
-  min_x <- min(x)
-  max_x <- max(x)
+  min_x <- min(x) - delta*(max(x) - min(x))
+  max_x <- max(x) + delta*(max(x) - min(x))
 
   # estimate mean and sd
   mean_x <- mean(x)
