@@ -41,7 +41,7 @@ boxplot_w_points <- function(...,
 
   # check equal dimension between # of vectors provided and length of argument names if provided
   # provide error if so
-  if (!is.null(names) && length(names) != length(data)) {
+  if (!is.null(names) && (length(names) != length(data))) {
     stop(paste(
       "Mismatch between length of argument 'names', ",
       length(names),
