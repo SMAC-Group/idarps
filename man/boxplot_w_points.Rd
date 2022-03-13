@@ -6,16 +6,16 @@
 \usage{
 boxplot_w_points(
   ...,
-  col_points = "#FFC2E299",
+  col_points = "#9033FF3F",
   col_boxplot = "#d2d2d2",
   horizontal = F,
   main = "",
-  names = NA,
+  names = NULL,
   las = 0,
   xlab = "",
   ylab = "",
   seed = 123,
-  jitter_param = 0.2
+  jitter_param = 0.3
 )
 }
 \arguments{
