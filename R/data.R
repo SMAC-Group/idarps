@@ -13,3 +13,20 @@
 #' }
 #' @source \url{http://www.diamondse.info/}
 "covid"
+
+
+#' Customer attendance of a pharmacy in Geneva
+#'
+#' A dataset containing the
+#'
+#' @format A data frame with 64 rows and 5 variables:
+#' \describe{
+#'   \item{icu}{admission to ICU, binary (0 for no, 1 for yes)}
+#'   \item{sex}{sex}
+#'   \item{age}{age in year}
+#'   \item{ldh}{lactate dehydrogenase in U/L}
+#'   \item{spo2}{oxygen saturation}
+#'
+#' }
+#' @source \url{http://www.diamondse.info/}
+"covid"

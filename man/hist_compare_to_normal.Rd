@@ -37,3 +37,10 @@ hist_compare_to_normal(
 \description{
 hist_compare_to_normal
 }
+\examples{
+n <- 1000
+x <- rnorm(n = n)
+hist_compare_to_normal(x)
+x2 <- rexp(n, rate = 25)
+hist_compare_to_normal(x2, legend_position = "topright")
+}
