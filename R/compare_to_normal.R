@@ -20,10 +20,11 @@ hist_compare_to_normal <- function(x,
                                    main = "", xlab = "",
                                    ylab = "",
                                    lwd_line = 1.5,
-                                   col_line = "#ff160e",
+                                   col_line1 = "#ff160e",
+                                   col_line2 = "#335bff",
                                    add_estimated_param = T,
                                    legend_position = "topleft",
-                                   delta = 0.05,
+                                   delta = 0.2,
                                    ...) {
   # x = rnorm(1000)
   # col = "lightgray"
@@ -43,15 +44,20 @@ hist_compare_to_normal <- function(x,
   mean_x <- mean(x)
   sd_x <- sd(x)
 
+  # estimate median and mad
+  med_x <- median(x)
+  mad_x <- mad(x)
+
   # compute normal density
   xx <- seq(from = min_x, to = max_x, length.out = 500)
-  yy <- dnorm(xx, mean = mean_x, sd = sd_x)
+  yy1 <- dnorm(xx, mean = mean_x, sd = sd_x)
+  yy2 <- dnorm(xx, mean = med_x, sd = mad_x)
 
   # plot histogram
   h <- hist(x, plot = F)
 
   # get value ymax
-  y_max <- max(c(h$density, yy))
+  y_max <- max(c(h$density, yy1, yy2))
 
   h <- hist(x,
     col = col, main = main,
@@ -60,7 +66,8 @@ hist_compare_to_normal <- function(x,
   ) # , ...
 
   # add line
-  lines(x = xx, y = yy, type = "l", col = col_line, lwd = lwd_line)
+  lines(x = xx, y = yy1, type = "l", col = col_line1, lwd = lwd_line)
+  lines(x = xx, y = yy2, type = "l", col = col_line2, lwd = lwd_line, lty = 2)
 
   # add legend if add_estimated_param
   if (add_estimated_param) {
@@ -74,7 +81,13 @@ hist_compare_to_normal <- function(x,
       ),
       bty = "n", cex = .85
     )
+
+    legend("topright", c("Standard", "Robust"),
+           col = c( col_line1,  col_line2), lwd = lwd_line, lty = c(1,2),
+           bty = "n", cex = 0.75)
   }
+
+
 }
 
 
