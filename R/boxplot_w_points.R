@@ -33,7 +33,7 @@ boxplot_w_points <- function(...,
                              xlab = "",
                              ylab = "",
                              seed = 123,
-                             jitter_param = .3) {
+                             jitter_param = .25) {
 
 
   # list all vectors
