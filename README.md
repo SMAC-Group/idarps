@@ -1,4 +1,10 @@
 # idar
+
+<p align="center">
+<img src="static/logo_data_analytics.png" align="center" width="450px"/>
+</p>
+
+
 Package for class "Modelling and Data Analysis for Pharmaceutical Science" (Introduction to Data Analytics with R - `idar`)
 
 # Installation
