@@ -2,7 +2,7 @@
 <img src="static/logo_data_analytics.png" align="center" width="450px"/>
 </p>
 
-# idar
+# `idar`
 Package for class "Modelling and Data Analysis for Pharmaceutical Science" (`idar`, which stands for Introduction to Data Analytics with `R`=
 
 # Installation
