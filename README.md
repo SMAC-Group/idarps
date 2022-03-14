@@ -3,7 +3,7 @@
 </p>
 
 # `idar`
-Package for class "Modelling and Data Analysis for Pharmaceutical Science" (`idar`, which stands for Introduction to Data Analytics with `R`=)
+Package for class "Modelling and Data Analysis for Pharmaceutical Science" (`idar`, which stands for Introduction to Data Analytics with `R`)
 
 # Installation
 You can install `idar` from github with:
