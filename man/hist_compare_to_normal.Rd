@@ -11,9 +11,11 @@ hist_compare_to_normal(
   xlab = "",
   ylab = "",
   lwd_line = 1.5,
-  col_line = "#ff160e",
-  add_estimated_param = T,
+  col_line1 = "#ff160e",
+  col_line2 = "#335bff",
+  add_legend = T,
   legend_position = "topleft",
+  delta = 0.2,
   ...
 )
 }
@@ -28,7 +30,7 @@ hist_compare_to_normal(
 
 \item{ylab}{a string indicating the y label}
 
-\item{add_estimated_param}{a Boolean if the estimated parameters of the Normal distribution should be plotted}
+\item{add_legend}{a Boolean if the estimated parameters of the Normal distribution should be plotted}
 
 \item{legend_position}{a string specifying the position of the legend.}
 
