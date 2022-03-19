@@ -12,10 +12,10 @@
   \item{bmi}{bmi}
   \item{weight}{weight in (kg)}
   \item{number_doses}{Number of doses of the dexamethasone (DEX) drug}
-  \item{tmax}{the time it takes for the drug to reach the maximum concentration (i.e. Cmax) after its administration}
-  \item{cmax}{the maximum concentration that  achieves in the blood after the drug has been administered}
-  \item{t1_2}{t1_2 is the time required to decrease the drug concentration within the body by one-half during elimination}
-  \item{auc}{the integral (from 0 to 8 hours) of a curve that describes the variation of a drug concentration in the blood as a function of time it takes for a drug to reach the maximum concentration (Cmax) after administration of a drug}
+  \item{tmax}{the time it takes for the drug to reach the maximum concentration (i.e. Cmax) after its administration in hours (h)}
+  \item{cmax}{the maximum concentration that  achieves in the blood after the drug has been administered (ng/m)}
+  \item{t1_2}{t1_2 is the time required to decrease the drug concentration within the body by one-half during elimination in hours (h)}
+  \item{auc}{the integral (from 0 to 8 hours) of a curve that describes the variation of a drug concentration in the blood as a function of time it takes for a drug to reach the maximum concentration (Cmax) after administration of a drug (ng.h/m)}
   \item{lenght_hospital}{Number of days the patient were hospitalized}
   \item{lenght_intermed}{Number of days the patient were hospitalized at the intermediate and intensive care unit}
   \item{crp}{crp}
