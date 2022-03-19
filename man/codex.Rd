@@ -7,30 +7,30 @@
 \format{
 \describe{
   \item{id}{id}
-  \item{gender}{score}
+  \item{gender}{gender. 0 corresponds the men and 1 to women}
   \item{age}{age}
-  \item{bmi}{height}
-  \item{weight}{diet.type}
-  \item{number_doses}{initial.weight}
-  \item{tmax}{final.weight}
-  \item{cmax}{id}
-  \item{t1_2}{score}
-  \item{auc}{age}
-  \item{lenght_hospital}{height}
-  \item{lenght_intermed}{diet.type}
-  \item{crp}{initial.weight}
-  \item{comor_e}{final.weight}
-  \item{comor_p}{final.weight}
-  \item{comor_v}{final.weight}
-  \item{comor_c}{final.weight}
-  \item{comor_r}{final.weight}
-  \item{obese}{final.weight}
+  \item{bmi}{bmi}
+  \item{weight}{weight in (kg)}
+  \item{number_doses}{Number of doses of the dexamethasone (DEX) drug}
+  \item{tmax}{the time it takes for the drug to reach the maximum concentration (i.e. Cmax) after its administration}
+  \item{cmax}{the maximum concentration that  achieves in the blood after the drug has been administered}
+  \item{t1_2}{t1_2 is the time required to decrease the drug concentration within the body by one-half during elimination}
+  \item{auc}{the integral (from 0 to 8 hours) of a curve that describes the variation of a drug concentration in the blood as a function of time it takes for a drug to reach the maximum concentration (Cmax) after administration of a drug}
+  \item{lenght_hospital}{Number of days the patient were hospitalized}
+  \item{lenght_intermed}{Number of days the patient were hospitalized at the intermediate and intensive care unit}
+  \item{crp}{crp}
+  \item{comor_e}{Presence of cormobidity type e}
+  \item{comor_p}{Presence of cormobidity type p}
+  \item{comor_v}{Presence of cormobidity type v}
+  \item{comor_c}{Presence of cormobidity type c}
+  \item{comor_r}{Presence of cormobidity type r}
+  \item{obese}{Is the subject obese. Indicator variable based on the BMI > 30}
 }
 }
 \usage{
 codex
 }
 \description{
-codex
+Data concerning an observational study conducted at Geneva University Hospitals to assess the impact of weight on the pharmacokinetics of dexamethasone in normal-weight versus obese patients hospitalized for COVID-19.
 }
 \keyword{datasets}

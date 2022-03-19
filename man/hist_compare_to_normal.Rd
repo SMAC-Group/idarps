@@ -30,11 +30,19 @@ hist_compare_to_normal(
 
 \item{ylab}{a string indicating the y label}
 
+\item{lwd_line}{width of density lines}
+
+\item{col_line1}{color of density line classic mle estimation}
+
+\item{col_line2}{color of density line classic robust estimation}
+
 \item{add_legend}{a Boolean if the estimated parameters of the Normal distribution should be plotted}
 
 \item{legend_position}{a string specifying the position of the legend.}
 
-\item{las}{a numeric value indicating the orientation of the tick mark labels and any other text added to a plot after its initialization. The options are as follows: always parallel to the axis (the default, 0), always horizontal (1), always perpendicular to the axis (2), and always vertical (3).}
+\item{delta}{graphic parameter to determine the shrinkage of the axis}
+
+\item{...}{Extra graphical arguments}
 }
 \description{
 hist_compare_to_normal

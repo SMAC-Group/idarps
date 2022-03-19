@@ -21,8 +21,8 @@
 #' z <- rnorm(20, mean = 15)
 #' boxplot_w_points(x, main = "test")
 #' boxplot_w_points(x, y, names = c("x", "y"), las = 1, main = "Data")
-#' boxplot_w_points(x, y, z, names = c("x", "y", "z"), horizontal = T, las = 1, main = "Data")
-#' boxplot_w_points(x, y, z, names = c("x", "y", "z"), horizontal = F, las = 1, main = "Data")
+#' boxplot_w_points(x, y, z, names = c("x", "y", "z"), horizontal = TRUE, las = 1, main = "Data")
+#' boxplot_w_points(x, y, z, names = c("x", "y", "z"), horizontal = FALSE, las = 1, main = "Data")
 boxplot_w_points <- function(...,
                              col_points = "#9033FF3F",
                              col_boxplot = "#d2d2d2",

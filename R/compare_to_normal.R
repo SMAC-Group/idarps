@@ -4,11 +4,15 @@
 #' @param x data vector to be visualized
 #' @param col color of the histogram
 #' @param main string indicating the title of the plot
-#' @param las a numeric value indicating the orientation of the tick mark labels and any other text added to a plot after its initialization. The options are as follows: always parallel to the axis (the default, 0), always horizontal (1), always perpendicular to the axis (2), and always vertical (3).
 #' @param xlab a string indicating the x label
 #' @param ylab a string indicating the y label
 #' @param add_legend a Boolean if the estimated parameters of the Normal distribution should be plotted
 #' @param legend_position a string specifying the position of the legend.
+#' @param lwd_line width of density lines
+#' @param col_line1 color of density line classic mle estimation
+#' @param col_line2 color of density line classic robust estimation
+#' @param delta graphic parameter to determine the shrinkage of the axis
+#' @param ...  Extra graphical arguments
 #' @examples
 #' n <- 1000
 #' x <- rnorm(n = n)
