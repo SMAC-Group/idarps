@@ -152,3 +152,29 @@
 #' }
 "students"
 #'
+
+
+#'
+#' COVID-19 Spatial
+#'
+#' Data from the COVID-19 Data Hub joined with spatial features of European countries
+#'
+#' @format
+#' \describe{
+#'   \item{admin}{Country}
+#'   \item{iso_alpha_3}{3-letter code of the country according to the standard ISO 3166-1 Alpha-3}
+#'   \item{date}{Date}
+#'   \item{confirmed}{Cumulative number of confirmed cases}
+#'   \item{population}{Total population}
+#'   \item{tests}{Cumulative number of tests}
+#'   \item{diff_confirmed}{Daily number of confirmed cases}
+#'   \item{diff_test}{Daily number of tests}
+#'   \item{confirmed_per_pop}{Number of daily confirmed cases divided per the country population}
+#'   \item{confirmed_per_pop_ma}{Moving Average applied to confirmed_per_pop with a window of 7 days}
+#'   \item{geometry}{`sf` geometry list of country}
+#' }
+#'
+#' #' @source \url{https://covid19datahub.io/}
+#'
+"data_covid_europe_spatial"
+#'
