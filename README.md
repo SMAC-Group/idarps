@@ -1,5 +1,9 @@
-# idar
-Package for class "Modelling and Data Analysis for Pharmaceutical Science" (Introduction to Data Analytics with R - `idar`)
+<p align="center">
+<img src="static/logo_data_analytics.png" align="center" width="450px"/>
+</p>
+
+# `idar`
+Package for class "Modelling and Data Analysis for Pharmaceutical Science" (`idar`, which stands for Introduction to Data Analytics with `R`)
 
 # Installation
 You can install `idar` from github with:

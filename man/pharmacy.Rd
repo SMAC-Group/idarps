@@ -14,9 +14,6 @@ A data frame with 17520 rows and 4 variables:
 
 }
 }
-\source{
-\url{http://www.diamondse.info/}
-}
 \usage{
 pharmacy
 }

@@ -41,3 +41,7 @@ save(reading, file = "data/reading.RData")
 students <- read_csv("data-raw/students.csv")
 colnames(students)
 save(students, file = "data/students.RData")
+
+# data_covid_europe_spatial
+load("data-raw/data_covid_europe_spatial.rda")
+save(data_covid_europe_spatial, file = "data/data_covid_europe_spatial.RData")
