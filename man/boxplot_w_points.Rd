@@ -15,7 +15,7 @@ boxplot_w_points(
   xlab = "",
   ylab = "",
   seed = 123,
-  jitter_param = 0.3
+  jitter_param = 0.25
 )
 }
 \arguments{

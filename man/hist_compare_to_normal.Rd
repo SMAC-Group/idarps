@@ -11,9 +11,11 @@ hist_compare_to_normal(
   xlab = "",
   ylab = "",
   lwd_line = 1.5,
-  col_line = "#ff160e",
+  col_line1 = "#ff160e",
+  col_line2 = "#335bff",
   add_estimated_param = T,
   legend_position = "topleft",
+  delta = 0.2,
   ...
 )
 }
