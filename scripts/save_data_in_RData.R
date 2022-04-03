@@ -3,16 +3,25 @@ library(readr)
 library(dplyr)
 library(janitor)
 
-# bronchitis
-bronchitis <- read_csv("data-raw/bronchitis.csv")
-save(bronchitis, file = "data/bronchitis.RData")
 
 # cortisol
 cortisol <- read_csv("data-raw/cortisol.csv")
 head(cortisol)
 colnames(cortisol)
 cortisol = janitor::clean_names(cortisol)
+# modif stef
+set.seed(189)
+cal = 3500 + cortisol$urine_cortisol_pg_mg*0.05 - 1300*as.numeric(cortisol$group == "C") + rnorm(length(cortisol$id), 0, 300)
+cortisol$caloric = cal
+cortisol = cortisol[,-5]
+names(cortisol) = c("id", "group", "gender", "cortisol", "acth", "crh", "testosterone", "lh", "caloric")
 save(cortisol, file = "data/cortisol.RData")
+
+# bronchitis
+bronchitis <- read_csv("data-raw/bronchitis.csv")
+save(bronchitis, file = "data/bronchitis.RData")
+
+
 
 # covid
 covid <- read_csv("data-raw/covid.csv")

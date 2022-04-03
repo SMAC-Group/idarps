@@ -48,12 +48,12 @@
 #'   \item{id}{the id of the pig}
 #'   \item{group}{the diet fed to the pig (chipped diet or non chipped diet)}
 #'   \item{gender}{the gender of the pig}
-#'   \item{urine_cortisol_pg_mg}{urine costisol in pg/ml}
-#'   \item{serum_cortisol_ng_ml}{serum cortisol in ng/ml}
-#'   \item{serum_acth_pg_ml}{serum acth in pg/ml}
-#'   \item{serum_crh_pg_ml}{serum crh in pg/ml}
-#'   \item{testosterone_ng_ml}{testosterone in ng/ml}
-#'   \item{lh_ng_ml}{LH in ng/ml}
+#'   \item{cortisol}{urine costisol in pg/ml}
+#'   \item{acth}{serum acth in pg/ml}
+#'   \item{crh}{serum crh in pg/ml}
+#'   \item{testosterone}{testosterone in ng/ml}
+#'   \item{lh}{LH in ng/ml}
+#'   \item{caloric}{Daily caloric intake in kcal}
 #'   }
 "cortisol"
 #'
