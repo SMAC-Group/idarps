@@ -52,5 +52,21 @@ colnames(students)
 save(students, file = "data/students.RData")
 
 # data_covid_europe_spatial
-load("data-raw/data_covid_europe_spatial.rda")
+# load("data-raw/data_covid_europe_spatial.rda")
+# library(idar)
+# data("data_covid_europe_spatial")
+# library(dplyr)
+# data_covid_europe_spatial = data_covid_europe_spatial[data_covid_europe_spatial$admin=="Switzerland", ]
+# data_covid_europe_spatial = data_covid_europe_spatial %>% filter(admin=="Switzerland")
 save(data_covid_europe_spatial, file = "data/data_covid_europe_spatial.RData")
+library(idar)
+data_covid_switzerland_spatial = data_covid_europe_spatial
+save(data_covid_switzerland_spatial, file = "data/data_covid_switzerland_spatial.RData")
+
+
+
+
+# HP13Cbicarbonate
+HP13Cbicarbonate = read.csv("data-raw/comment.csv")
+HP13Cbicarbonate = HP13Cbicarbonate %>% select(-X)
+save(HP13Cbicarbonate, file = "data/HP13Cbicarbonate.RData")

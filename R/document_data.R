@@ -152,7 +152,7 @@
 #'
 #' COVID-19 Spatial
 #'
-#' Data from the COVID-19 Data Hub joined with spatial features of European countries
+#' Data from the COVID-19 Data Hub joined with spatial features for Switzerland
 #'
 #' @format
 #' \describe{
@@ -169,7 +169,29 @@
 #'   \item{geometry}{`sf` geometry list of country}
 #' }
 #'
-#' #' @source \url{https://covid19datahub.io/}
+#' @source \url{https://covid19datahub.io/}
 #'
-"data_covid_europe_spatial"
+"data_covid_switzerland_spatial"
+#'
+#'
+#'
+
+
+#' HP13Cbicarbonate
+#' @description Data from an experiment made on rats which compares the HP13C bicarbonate signal intensities normalized to
+#' the total sum of metabolites and corresponding initial reaction rate as a function of the injected dose of HP1-13C pyruvate.
+#' Two groups of rats were compared (i.e. fed and overnight-fasted). Dataset from Can et al. 2022.
+#'
+#'
+#' HP13Cbicarbonate
+#'
+#' @format
+#' \describe{
+#'   \item{signal}{HP13C bicarbonate signal intensities normalized to the total sum of metabolites}
+#'   \item{dose}{initial reaction rate as a function of the injected dose of HP13C pyruvate}
+#'   \item{group}{fed and overnight-fasted}
+#' }
+#'
+#' @source \url{https://www.nature.com/articles/s42003-021-02978-2}
+"HP13Cbicarbonate"
 #'
