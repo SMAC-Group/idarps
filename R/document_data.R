@@ -93,10 +93,13 @@
 
 #' bronchitis
 #'
-#' bronchitis
+#' Data collected in a study to assess the effects of smoking and pollution on being diagnosed with bronchitis. This dataset is based on 212 subjects
 #'
 #' @format
 #' \describe{
+#' \item{bron}{Presence of bronchitis}
+#' \item{cigs}{Average daily number of smoked cigarettes}
+#' \item{poll}{Pollution index}
 #'
 #' }
 "bronchitis"
