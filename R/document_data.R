@@ -198,3 +198,28 @@
 #' @source \url{https://www.nature.com/articles/s42003-021-02978-2}
 "HP13Cbicarbonate"
 #'
+
+
+
+
+
+
+
+#' snoring
+#' @description Study on the physical and behavioral characteristics of snorers.
+#'
+#' snoring
+#'
+#' @format
+#' \describe{
+#' \item{sex}{gender of the person (0 for males and 1 for females).}
+#' \item{age}{age in years}
+#' \item{height}{height in cm}
+#' \item{weight}{weight in kg}
+#' \item{smoke}{smoking behavior (0 for non-smokers and 1 for smokers).}
+#' \item{alcohol}{number of glasses drunk per day (in red wine equivalent).}
+#' \item{snore}{snoring diagnosis (0=not snoring, 1=snoring).}
+#' }
+#'
+"snoring"
+#'

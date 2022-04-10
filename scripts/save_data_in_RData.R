@@ -70,3 +70,24 @@ save(data_covid_switzerland_spatial, file = "data/data_covid_switzerland_spatial
 HP13Cbicarbonate = read.csv("data-raw/comment.csv")
 HP13Cbicarbonate = HP13Cbicarbonate %>% select(-X)
 save(HP13Cbicarbonate, file = "data/HP13Cbicarbonate.RData")
+
+
+# load snoring
+library(magrittr)
+snoring_0  = read.csv("data-raw/ronfle_csv.csv")
+colnames(snoring_0)
+# rename columns
+colnames(snoring_0) = c("age", "weight", "height", "alcohol", "sex", "snore", "smoke"
+)
+#reorder
+snoring_1 = snoring_0[, c("sex", "age", "height", "weight", "smoke", "alcohol", "snore"
+)]
+snoring_1
+snoring = snoring_1
+save(snoring, file = "data/snoring.RData")
+
+
+
+
+
+
