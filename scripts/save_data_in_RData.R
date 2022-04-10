@@ -87,7 +87,13 @@ snoring = snoring_1
 save(snoring, file = "data/snoring.RData")
 
 
+# load fev
 
-
-
-
+fev_0  = read.csv("data-raw/volexp_csv.csv")
+# height in cm
+fev_0$height = fev_0$ht * 2.54
+fev_1 = fev_0 %>% dplyr::select(-c(ht))
+boxplot(fev_1$height)
+fev_1
+fev = fev_1
+save(fev, file = "data/fev.RData")
