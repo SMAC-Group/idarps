@@ -1,18 +1,20 @@
 #' @export
 #' @name hist_compare_to_normal
 #' @title hist_compare_to_normal
-#' @param x data vector to be visualized
-#' @param col color of the histogram
-#' @param main string indicating the title of the plot
-#' @param xlab a string indicating the x label
-#' @param ylab a string indicating the y label
-#' @param add_legend a Boolean if the estimated parameters of the Normal distribution should be plotted
+#' @param x data vector to be visualized.
+#' @param col color of the histogram.
+#' @param main string indicating the title of the plot.
+#' @param xlab a string indicating the x label.
+#' @param ylab a string indicating the y label.
+#' @param add_legend a Boolean if the estimated parameters of the Normal distribution should be plotted.
 #' @param legend_position a string specifying the position of the legend.
-#' @param lwd_line width of density lines
-#' @param col_line1 color of density line classic mle estimation
-#' @param col_line2 color of density line classic robust estimation
-#' @param delta graphic parameter to determine the shrinkage of the axis
-#' @param ...  Extra graphical arguments
+#' @param lwd_line width of density lines.
+#' @param col_line1 color of density line classic mle estimation.
+#' @param col_line2 color of density line classic robust estimation.
+#' @param delta graphic parameter to determine the shrinkage of the axis.
+#' @param ...  Extra graphical arguments.
+#' @importFrom graphics hist legend lines
+#' @importFrom stats dnorm mad median sd
 #' @examples
 #' n <- 1000
 #' x <- rnorm(n = n)

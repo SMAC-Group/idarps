@@ -1,11 +1,14 @@
-Package: idar
+Package: idarps
 Type: Package
-Title: Package for the class "Modelling and Data Analysis for Pharmaceutical Science"
-Version: 0.1.0
-Author: Stephane Guerrier, Lionel Voirol, Jun Wu, Wenfei Chu
-Maintainer: The package maintainer <lionel.voirol@unige.ch>
-Description: Useful functions for data analysis
+Title: Package for the Class "Modelling and Data Analysis for Pharmaceutical Sciences"
+Version: 0.0.1
+Authors@R: c(
+    person("Lionel", "Voirol", email = "lionelvoirol@hotmail.com", role = c("aut", "cre")),
+    person("Stéphane", "Guerrier", role = "aut")
+    )
+Maintainer: The package maintainer <lionelvoirol@hotmail.com>
+Description: Datasets and functions for data analysis.
 License: AGPL-3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.3

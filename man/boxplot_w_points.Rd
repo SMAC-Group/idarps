@@ -19,25 +19,25 @@ boxplot_w_points(
 )
 }
 \arguments{
-\item{...}{data vectors to be visualized}
+\item{...}{data vectors to be visualized.}
 
-\item{col_points}{color of the points to be added to the boxplot}
+\item{col_points}{color of the points to be added to the boxplot.}
 
-\item{col_boxplot}{color of the boxplot}
+\item{col_boxplot}{color of the boxplot.}
 
 \item{horizontal}{logical indicating if the boxplots should be horizontal; default FALSE means vertical boxes.}
 
-\item{main}{string indicating the title of the plot}
+\item{main}{string indicating the title of the plot.}
 
 \item{names}{vector of string indicating the group labels which will be printed under each boxplot.}
 
 \item{las}{a numeric value indicating the orientation of the tick mark labels and any other text added to a plot after its initialization. The options are as follows: always parallel to the axis (the default, 0), always horizontal (1), always perpendicular to the axis (2), and always vertical (3).}
 
-\item{xlab}{a string indicating the x label}
+\item{xlab}{a string indicating the x label.}
 
-\item{ylab}{a string indicating the y label}
+\item{ylab}{a string indicating the y label.}
 
-\item{seed}{an integer specifying a seed for the random jitter of the boxplot points}
+\item{seed}{an integer specifying a seed for the random jitter of the boxplot points.}
 
 \item{jitter_param}{a double specifying the amount of jittering applied on points.}
 }

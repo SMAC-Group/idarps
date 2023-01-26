@@ -20,9 +20,13 @@ devtools::install_github("SMAC-Group/idar")
 - `codex`
 - `cortisol`
 - `covid`
+- `data_covid_switzerland`
 - `diet`
+- `fev`
+- `HP13Cbicarbonate`
 - `pharmacy`
 - `reading`
+- `snoring`
 - `students`
 
 To load a dataset, assuming that `idar` is loaded in your environnement (`library(idar)`), you can use:

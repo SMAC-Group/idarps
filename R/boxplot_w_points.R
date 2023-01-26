@@ -1,17 +1,17 @@
 #' @export
 #' @name boxplot_w_points
 #' @title boxplot_w_points
-#' @param ... data vectors to be visualized
-#' @param col_points color of the points to be added to the boxplot
-#' @param col_boxplot color of the boxplot
+#' @param ... data vectors to be visualized.
+#' @param col_points color of the points to be added to the boxplot.
+#' @param col_boxplot color of the boxplot.
 #' @param horizontal logical indicating if the boxplots should be horizontal; default FALSE means vertical boxes.
-#' @param main string indicating the title of the plot
+#' @param main string indicating the title of the plot.
 #' @param names vector of string indicating the group labels which will be printed under each boxplot.
 #' @param names vector of string indicating the group labels which will be printed under each boxplot.
 #' @param las a numeric value indicating the orientation of the tick mark labels and any other text added to a plot after its initialization. The options are as follows: always parallel to the axis (the default, 0), always horizontal (1), always perpendicular to the axis (2), and always vertical (3).
-#' @param xlab a string indicating the x label
-#' @param ylab a string indicating the y label
-#' @param seed an integer specifying a seed for the random jitter of the boxplot points
+#' @param xlab a string indicating the x label.
+#' @param ylab a string indicating the y label.
+#' @param seed an integer specifying a seed for the random jitter of the boxplot points.
 #' @param jitter_param a double specifying the amount of jittering applied on points.
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom graphics axis boxplot mtext par stripchart

@@ -20,29 +20,29 @@ hist_compare_to_normal(
 )
 }
 \arguments{
-\item{x}{data vector to be visualized}
+\item{x}{data vector to be visualized.}
 
-\item{col}{color of the histogram}
+\item{col}{color of the histogram.}
 
-\item{main}{string indicating the title of the plot}
+\item{main}{string indicating the title of the plot.}
 
-\item{xlab}{a string indicating the x label}
+\item{xlab}{a string indicating the x label.}
 
-\item{ylab}{a string indicating the y label}
+\item{ylab}{a string indicating the y label.}
 
-\item{lwd_line}{width of density lines}
+\item{lwd_line}{width of density lines.}
 
-\item{col_line1}{color of density line classic mle estimation}
+\item{col_line1}{color of density line classic mle estimation.}
 
-\item{col_line2}{color of density line classic robust estimation}
+\item{col_line2}{color of density line classic robust estimation.}
 
-\item{add_legend}{a Boolean if the estimated parameters of the Normal distribution should be plotted}
+\item{add_legend}{a Boolean if the estimated parameters of the Normal distribution should be plotted.}
 
 \item{legend_position}{a string specifying the position of the legend.}
 
-\item{delta}{graphic parameter to determine the shrinkage of the axis}
+\item{delta}{graphic parameter to determine the shrinkage of the axis.}
 
-\item{...}{Extra graphical arguments}
+\item{...}{Extra graphical arguments.}
 }
 \description{
 hist_compare_to_normal
