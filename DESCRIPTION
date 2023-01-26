@@ -6,7 +6,6 @@ Authors@R: c(
     person("Lionel", "Voirol", email = "lionelvoirol@hotmail.com", role = c("aut", "cre")),
     person("Stéphane", "Guerrier", role = "aut")
     )
-Maintainer: The package maintainer <lionelvoirol@hotmail.com>
 Description: Datasets and functions for data analysis.
 License: AGPL-3
 Encoding: UTF-8
