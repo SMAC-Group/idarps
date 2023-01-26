@@ -3,7 +3,7 @@
 </p>
 
 # `idarps`
-Package for class "Modelling and Data Analysis for Pharmaceutical Sciences" (`idarps`, which stands for Introduction to Data Analytics with `R` for Pharmaceutical Science)
+Package for class "Modelling and Data Analysis for Pharmaceutical Sciences" (`idarps`, which stands for Introduction to Data Analytics with `R` for Pharmaceutical Sciences)
 
 # Installation
 You can install `idarps` from github with:
