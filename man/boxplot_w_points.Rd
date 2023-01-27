@@ -8,7 +8,7 @@ boxplot_w_points(
   ...,
   col_points = "#9033FF3F",
   col_boxplot = "#d2d2d2",
-  horizontal = F,
+  horizontal = FALSE,
   main = "",
   names = NULL,
   las = 0,
@@ -40,6 +40,9 @@ boxplot_w_points(
 \item{seed}{an integer specifying a seed for the random jitter of the boxplot points.}
 
 \item{jitter_param}{a double specifying the amount of jittering applied on points.}
+}
+\value{
+No return value. Plot a boxplot.
 }
 \description{
 boxplot_w_points

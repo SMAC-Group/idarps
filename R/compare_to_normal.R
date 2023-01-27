@@ -12,6 +12,7 @@
 #' @param col_line1 color of density line classic mle estimation.
 #' @param col_line2 color of density line classic robust estimation.
 #' @param delta graphic parameter to determine the shrinkage of the axis.
+#' @return  No return value. Plot a histogram.
 #' @param ...  Extra graphical arguments.
 #' @importFrom graphics hist legend lines
 #' @importFrom stats dnorm mad median sd
@@ -28,21 +29,11 @@ hist_compare_to_normal <- function(x,
                                    lwd_line = 1.5,
                                    col_line1 = "#ff160e",
                                    col_line2 = "#335bff",
-                                   add_legend = T,
+                                   add_legend = TRUE,
                                    legend_position = "topleft",
                                    delta = 0.2,
                                    ...) {
-  # x = rnorm(1000)
-  # col = "lightgray"
-  # main = ""
-  # xlab = ""
-  # ylab = ""
-  # lwd_line = 1.5
-  # col_line1 = "#ff160e"
-  # col_line2 = "#335bff"
-  # add_estimated_param = T
-  # legend_position = "topleft"
-  # delta = 0.2
+
 
   # compute min and max
   min_x <- min(x) - delta * (max(x) - min(x))
@@ -62,15 +53,15 @@ hist_compare_to_normal <- function(x,
   yy2 <- dnorm(xx, mean = med_x, sd = mad_x)
 
   # plot histogram
-  h <- hist(x, plot = F)
+  h <- hist(x, plot = FALSE)
 
   # get value ymax
   y_max <- max(c(h$density, yy1, yy2))
 
   h <- hist(x,
     col = col, main = main,
-    xlab = xlab, ylab = ylab, freq = F,
-    xlim = c(min_x, max_x), ylim = c(0, y_max), plot = T
+    xlab = xlab, ylab = ylab, freq = FALSE,
+    xlim = c(min_x, max_x), ylim = c(0, y_max), plot = TRUE
   ) # , ...
 
   # add line

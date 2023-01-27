@@ -13,6 +13,7 @@
 #' @param ylab a string indicating the y label.
 #' @param seed an integer specifying a seed for the random jitter of the boxplot points.
 #' @param jitter_param a double specifying the amount of jittering applied on points.
+#' @return No return value. Plot a boxplot.
 #' @importFrom grDevices col2rgb rgb
 #' @importFrom graphics axis boxplot mtext par stripchart
 #' @examples
@@ -26,7 +27,7 @@
 boxplot_w_points <- function(...,
                              col_points = "#9033FF3F",
                              col_boxplot = "#d2d2d2",
-                             horizontal = F,
+                             horizontal = FALSE,
                              main = "",
                              names = NULL,
                              las = 0,
@@ -54,9 +55,9 @@ boxplot_w_points <- function(...,
             las = las,
             xlab = xlab,
             ylab = ylab,
-            add = F,
-            axes = T,
-            outline = F,
+            add = FALSE,
+            axes = TRUE,
+            outline = FALSE,
             ylim = range(data)
     )
 

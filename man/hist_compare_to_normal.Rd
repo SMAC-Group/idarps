@@ -13,7 +13,7 @@ hist_compare_to_normal(
   lwd_line = 1.5,
   col_line1 = "#ff160e",
   col_line2 = "#335bff",
-  add_legend = T,
+  add_legend = TRUE,
   legend_position = "topleft",
   delta = 0.2,
   ...
@@ -43,6 +43,9 @@ hist_compare_to_normal(
 \item{delta}{graphic parameter to determine the shrinkage of the axis.}
 
 \item{...}{Extra graphical arguments.}
+}
+\value{
+No return value. Plot a histogram.
 }
 \description{
 hist_compare_to_normal
