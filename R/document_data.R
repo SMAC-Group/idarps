@@ -39,7 +39,7 @@
 
 
 #'
-#' biomarkers in pigs fed with various diets
+#' Biomarkers in pigs fed with various diets
 #'
 #' A dataset containing measured biomarkers in pigs fed with various diets
 #'
@@ -132,7 +132,7 @@
 #'   \item{id}{Student id.}
 #'   \item{score}{Degree of Reading Power (DRP) test score.}
 #'   \item{age}{Age of the students.}
-#'   \item{group}{Binary variable indicating whether a student participated to the directed reading activities (Treatment if the sutdent participated, Control otherwise).}
+#'   \item{group}{Binary variable indicating whether a student participated to the directed reading activities (Treatment if the student participated, Control otherwise).}
 #' }
 "reading"
 

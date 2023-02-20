@@ -3,7 +3,7 @@
 \docType{data}
 \name{cortisol}
 \alias{cortisol}
-\title{biomarkers in pigs fed with various diets}
+\title{Biomarkers in pigs fed with various diets}
 \format{
 A data frame with 61 rows and 9 variables:
 \describe{
