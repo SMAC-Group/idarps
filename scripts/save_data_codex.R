@@ -52,9 +52,12 @@ dat2$obese = ifelse(dat2$obese, 1, 0)
 dat2
 codex = dat2
 
+colnames(codex)
+library(magrittr)
+codex = codex %>% dplyr::rename(length_hospital = lenght_hospital,
+                                length_intermed = lenght_intermed)
 
-
-
+colnames(codex)
 
 save(codex, file = "data/codex.RData")
 
