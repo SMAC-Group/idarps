@@ -3,8 +3,7 @@
 
 <!-- badges: start -->
 
-
-![example workflow](https://github.com/SMAC-Group/idarps/actions/workflows/R-CMD-check.yaml/badge.svg)
+![example workflow](https://github.com/SMAC-Group/idarps/actions/workflows/R-CMD-check.yml/badge.svg)
 [![CRAN status](https://www.r-pkg.org/badges/version/idarps)](https://CRAN.R-project.org/package=idarps)
 ![](https://img.shields.io/github/last-commit/SMAC-Group/idarps) 
 [<img src="https://s-a.github.io/license/img/agpl-3.0.svg" />](https://s-a.github.io/license/?license=agpl-3.0&fullname=Stephan%20Ahlf&year=2015&profile=https://github.com/s-a&projectUrl=https://github.com/s-a/license&projectName=License%20Demo "")
