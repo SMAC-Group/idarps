@@ -45,6 +45,10 @@ R CMD check succeeded
 0 errors ✔ | 0 warnings ✔ | 1 note ✖
 
 
+# GitHub actions checks
+
+All tests passed successfully.
+
 # Downstream dependencies
 There are currently no downstream dependencies for this package.
 
