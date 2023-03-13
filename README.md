@@ -1,6 +1,4 @@
-<p align="center">
-<img src="static/logo_data_analytics.png" align="center" width="450px"/>
-</p>
+
 
 
 <!-- badges: start -->
@@ -14,6 +12,9 @@ downloads](http://cranlogs.r-pkg.org/badges/idarps)](https://www.r-pkg.org/pkg/i
 downloads](https://cranlogs.r-pkg.org/badges/grand-total/idarps)](https://www.r-pkg.org/pkg/idarps)
 <!-- badges: end -->
 
+<p align="center">
+<img src="static/logo_data_analytics.png" align="center" width="450px"/>
+</p>
 
 # `idarps`
 Package for class "Modelling and Data Analysis for Pharmaceutical Sciences" (`idarps`, which stands for Introduction to Data Analytics with `R` for Pharmaceutical Sciences)
