@@ -22,6 +22,7 @@ Package for class "Modelling and Data Analysis for Pharmaceutical Sciences" (`id
 # Installation
 
 The `idarps` package is available on both CRAN and GitHub. The CRAN version is considered stable while the GitHub version is subject to modifications/updates which may lead to installation problems or broken functions. You can install the stable version of the `idarps` package with:
+
 ## Installation from CRAN
 
 ```R
