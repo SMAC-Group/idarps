@@ -3,7 +3,7 @@
 \docType{data}
 \name{students}
 \alias{students}
-\title{students}
+\title{Students}
 \format{
 \describe{
   \item{day}{day}
@@ -14,6 +14,6 @@
 students
 }
 \description{
-students
+Students
 }
 \keyword{datasets}

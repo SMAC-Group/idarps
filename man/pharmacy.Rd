@@ -8,16 +8,15 @@
 A data frame with 17520 rows and 4 variables:
 \describe{
   \item{date}{the date}
-  \item{hours}{the hour of the day (1-24)}
+  \item{hours}{the hour of the day}
   \item{weekday}{the week day}
-  \item{attendance}{The recorded number of clients}
-
+  \item{attendance}{the recorded number of clients}
 }
 }
 \usage{
 pharmacy
 }
 \description{
-A dataset containing the number of clients in a Pharmacy for each hour over two years
+This dataset contains the number of clients in a pharmacy for each hour over two years.
 }
 \keyword{datasets}

@@ -6,16 +6,16 @@
 \title{codex}
 \format{
 \describe{
-  \item{id}{id}
-  \item{gender}{gender. 0 corresponds the men and 1 to women}
-  \item{age}{age}
-  \item{bmi}{bmi}
-  \item{weight}{weight in (kg)}
+  \item{id}{ID of the patient}
+  \item{gender}{Gender (0 for men and 1 for women)}
+  \item{age}{Age}
+  \item{bmi}{Body mass index}
+  \item{weight}{Weight in kg}
   \item{number_doses}{Number of doses of the dexamethasone (DEX) drug}
-  \item{tmax}{the time it takes for the drug to reach the maximum concentration (i.e. Cmax) after its administration in hours (h)}
-  \item{cmax}{the maximum concentration that  achieves in the blood after the drug has been administered (ng/m)}
+  \item{tmax}{The time it takes for the drug to reach the maximum concentration (i.e. Cmax) after its administration in hours (h)}
+  \item{cmax}{The maximum concentration that  achieves in the blood after the drug has been administered (ng/m)}
   \item{t1_2}{t1_2 is the time required to decrease the drug concentration within the body by one-half during elimination in hours (h)}
-  \item{auc}{the integral (from 0 to 8 hours) of a curve that describes the variation of a drug concentration in the blood as a function of time it takes for a drug to reach the maximum concentration (Cmax) after administration of a drug (ng.h/m)}
+  \item{auc}{The integral (from 0 to 8 hours) of a curve that describes the variation of a drug concentration in the blood as a function of time it takes for a drug to reach the maximum concentration (Cmax) after administration of a drug (ng.h/m)}
   \item{length_hospital}{Number of days the patient were hospitalized}
   \item{length_intermed}{Number of days the patient were hospitalized at the intermediate and intensive care unit}
   \item{crp}{crp}
@@ -24,13 +24,13 @@
   \item{comor_v}{Presence of cormobidity type v}
   \item{comor_c}{Presence of cormobidity type c}
   \item{comor_r}{Presence of cormobidity type r}
-  \item{obese}{Is the subject obese. Indicator variable based on the BMI > 30}
+  \item{obese}{Indicator variable based on whether the subject is obese (i.e. with BMI > 30), 0 for no and 1 for yes.}
 }
 }
 \usage{
 codex
 }
 \description{
-Data concerning an observational study conducted at Geneva University Hospitals to assess the impact of weight on the pharmacokinetics of dexamethasone in normal-weight versus obese patients hospitalized for COVID-19.
+This dataset is based on an observational study conducted at Geneva University Hospitals to assess the impact of weight on the pharmacokinetics of dexamethasone in normal-weight versus obese patients hospitalized for COVID-19.
 }
 \keyword{datasets}

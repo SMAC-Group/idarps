@@ -26,6 +26,6 @@
 data_covid_switzerland_spatial
 }
 \description{
-Data from the COVID-19 Data Hub joined with spatial features for Switzerland
+Data from the COVID-19 Data Hub joined with spatial features for Switzerland.
 }
 \keyword{datasets}
