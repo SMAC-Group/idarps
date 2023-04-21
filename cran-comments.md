@@ -1,54 +1,39 @@
 # Local check on Ubuntu 22.04
-   
-── R CMD check results ───────────────────────────────── idarps 0.0.2 ────
-Duration: 9.5s
+
+── R CMD check results ─────────────────────── idarps 0.0.3 ────
+Duration: 10.1s
 
 0 errors ✔ | 0 warnings ✔ | 0 notes ✔
 
 R CMD check succeeded
 
+Duration: 10.1s
+
 
 # Rhub check
 
-── idarps 0.0.2: NOTE
+## Test environments
+- R-hub windows-x86_64-devel (r-devel)
+- R-hub ubuntu-gcc-release (r-release)
+- R-hub fedora-clang-devel (r-devel)
 
-  Build ID:   idarps_0.0.2.tar.gz-8aa6407e72574214a0f0e225ea11612e
-  Platform:   Windows Server 2022, R-devel, 64 bit
-  Submitted:  8m 47.5s ago
-  Build time: 2m 31.6s
+## R CMD check results
+❯ On windows-x86_64-devel (r-devel), fedora-clang-devel (r-devel)
+  checking HTML version of manual ... NOTE
+  Skipping checking math rendering: package 'V8' unavailable
 
-❯ checking for detritus in the temp directory ... NOTE
-    'lastMiKTeXException'
+❯ On windows-x86_64-devel (r-devel)
+  checking for detritus in the temp directory ... NOTE
   Found the following files/directories:
+    'lastMiKTeXException'
 
-0 errors ✔ | 0 warnings ✔ | 1 note ✖
-
-── idarps 0.0.2: OK
-
-  Build ID:   idarps_0.0.2.tar.gz-aa03c6a676b14f238730f4217872a7dd
-  Platform:   Ubuntu Linux 20.04.1 LTS, R-release, GCC
-  Submitted:  8m 47.5s ago
-  Build time: 4m 48.7s
-
-0 errors ✔ | 0 warnings ✔ | 0 notes ✔
-
-── idarps 0.0.2: NOTE
-
-  Build ID:   idarps_0.0.2.tar.gz-04a1a2dacb31415fb4d31732fc9c9c41
-  Platform:   Fedora Linux, R-devel, clang, gfortran
-  Submitted:  8m 47.6s ago
-  Build time: 4m 42.7s
-
-❯ checking HTML version of manual ... NOTE
-  Skipping checking HTML validation: no command 'tidy' found
-
-0 errors ✔ | 0 warnings ✔ | 1 note ✖
-
+0 errors ✔ | 0 warnings ✔ | 2 notes ✖
 
 # GitHub actions checks
 
 All tests passed successfully.
 
 # Downstream dependencies
+
 There are currently no downstream dependencies for this package.
 
