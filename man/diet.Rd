@@ -3,22 +3,22 @@
 \docType{data}
 \name{diet}
 \alias{diet}
-\title{diet}
+\title{Diet}
 \format{
 \describe{
-  \item{id}{id}
-  \item{gender}{score}
-  \item{age}{age}
-  \item{height}{height}
-  \item{diet.type}{diet.type}
-  \item{initial.weight}{initial.weight}
-  \item{final.weight}{final.weight}
+  \item{id}{ID}
+  \item{gender}{Gender (male or female)}
+  \item{age}{Age in years}
+  \item{height}{Height in m}
+  \item{diet.type}{Type of diet (A, B or C)}
+  \item{initial.weight}{Initial weight in kg}
+  \item{final.weight}{Final weight in kg}
 }
 }
 \usage{
 diet
 }
 \description{
-diet
+Diet
 }
 \keyword{datasets}

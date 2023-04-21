@@ -8,20 +8,20 @@
 A data frame with 61 rows and 9 variables:
 \describe{
   \item{id}{the id of the pig}
-  \item{group}{the diet fed to the pig (chipped diet or non chipped diet)}
+  \item{group}{the diet fed to the pig (chipped diet or non-chipped diet)}
   \item{gender}{the gender of the pig}
   \item{cortisol}{urine costisol in pg/ml}
   \item{acth}{serum acth in pg/ml}
   \item{crh}{serum crh in pg/ml}
   \item{testosterone}{testosterone in ng/ml}
   \item{lh}{LH in ng/ml}
-  \item{caloric}{Daily caloric intake in kcal}
+  \item{caloric}{daily caloric intake in kcal}
   }
 }
 \usage{
 cortisol
 }
 \description{
-A dataset containing measured biomarkers in pigs fed with various diets
+This dataset contains measured biomarkers in pigs fed with various diets.
 }
 \keyword{datasets}

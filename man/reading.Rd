@@ -3,19 +3,19 @@
 \docType{data}
 \name{reading}
 \alias{reading}
-\title{Reading dataset}
+\title{Reading}
 \format{
 \describe{
-  \item{id}{Student id.}
-  \item{score}{Degree of Reading Power (DRP) test score.}
-  \item{age}{Age of the students.}
-  \item{group}{Binary variable indicating whether a student participated to the directed reading activities (Treatment if the student participated, Control otherwise).}
+  \item{id}{Student id}
+  \item{score}{Degree of Reading Power (DRP) test score}
+  \item{age}{Age of the students}
+  \item{group}{Binary variable indicating whether a student participated to the directed reading activities (Treatment if the student participated, Control otherwise)}
 }
 }
 \usage{
 reading
 }
 \description{
-Study on the effectiveness of directed reading activities for elementary school students (6-12 years old).
+This dataset is based on the effectiveness of directed reading activities for elementary school students (6-12 years old).
 }
 \keyword{datasets}

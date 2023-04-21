@@ -3,10 +3,10 @@
 \docType{data}
 \name{bronchitis}
 \alias{bronchitis}
-\title{bronchitis}
+\title{Bronchitis}
 \format{
 \describe{
-\item{bron}{Presence of bronchitis}
+\item{bron}{Presence of bronchitis (0 for no and 1 for yes)}
 \item{cigs}{Average daily number of smoked cigarettes}
 \item{poll}{Pollution index}
 
@@ -16,6 +16,6 @@
 bronchitis
 }
 \description{
-Data collected in a study to assess the effects of smoking and pollution on being diagnosed with bronchitis. This dataset is based on 212 subjects
+Data collected in a study to assess the effects of smoking and pollution on being diagnosed with bronchitis. This dataset is based on 212 subjects.
 }
 \keyword{datasets}

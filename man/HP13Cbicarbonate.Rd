@@ -21,8 +21,5 @@ HP13Cbicarbonate
 Data from an experiment made on rats which compares the HP13C bicarbonate signal intensities normalized to
 the total sum of metabolites and corresponding initial reaction rate as a function of the injected dose of HP1-13C pyruvate.
 Two groups of rats were compared (i.e. fed and overnight-fasted). Dataset from Can et al. 2022.
-
-
-HP13Cbicarbonate
 }
 \keyword{datasets}
