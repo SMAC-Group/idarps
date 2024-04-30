@@ -11,12 +11,14 @@ downloads](http://cranlogs.r-pkg.org/badges/idarps)](https://www.r-pkg.org/pkg/i
 downloads](https://cranlogs.r-pkg.org/badges/grand-total/idarps)](https://www.r-pkg.org/pkg/idarps)
 <!-- badges: end -->
 
+
+
+# `idarps` (Introduction to Data Analytics with `R` for Pharmaceutical Sciences)
+The `idarps` `R` package offers datasets and functions specifically designed for the "Modelling and Data Analysis for Pharmaceutical Sciences" course given at the University of Geneva in the M.Sc. of Pharmaceutical Sciences. These datasets are curated to showcase diverse methods of data analysis and statistical modeling, focusing on applications within the context of Health science. Additionally, the package includes a range of functions dedicated to data visualization.
+
 <p align="center">
 <img src="static/logo_data_analytics.png" align="center" width="450px"/>
 </p>
-
-# `idarps`
-Package for class "Modelling and Data Analysis for Pharmaceutical Sciences" (`idarps`, which stands for Introduction to Data Analytics with `R` for Pharmaceutical Sciences)
 
 # Installation
 
