@@ -97,3 +97,19 @@ boxplot(fev_1$height)
 fev_1
 fev = fev_1
 save(fev, file = "data/fev.RData")
+
+# diabete pakistan
+load("data-raw/df_diabete.rda")
+diabetes = df
+save(diabetes, file = "data/diabetes.RData")
+
+# simulated kuwait systol blood pressure
+rm(list=ls())
+load("data-raw/df_systol.rda")
+kuwait_bp = df_systol
+save(kuwait_bp, file ="data/kuwait_bp.rda")
+
+
+
+
+#

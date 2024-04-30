@@ -282,3 +282,61 @@
 #' @source \url{https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1}
 "BreastCancer"
 #'
+#'
+#'
+#'
+
+
+
+#' Diabetes study in Bangladesh
+#' @description This dataset contains reports of diabetes symptoms from 520 individuals, encompassing symptoms potentially associated with the condition. It was compiled through a questionnaire aimed at recently diagnosed diabetics or individuals displaying one or more symptoms. Data collection took place via direct questionnaire at Sylhet Diabetes Hospital in Bangladesh.
+#'
+#'
+#' @format
+#' \describe{
+#' \item{age}{Age of the patient in years}
+#' \item{gender}{Gender of the patient (Male, Female)}
+#' \item{polyuria}{Presence of polyuria (excessive urination) (Yes, No)}
+#' \item{polydipsia}{Presence of polydipsia (excessive thirst) (Yes, No)}
+#' \item{sudden_weight_loss}{Presence of sudden weight loss (Yes, No)}
+#' \item{weakness}{Presence of weakness (Yes, No)}
+#' \item{polyphagia}{Presence of polyphagia (excessive hunger) (Yes, No)}
+#' \item{genital_thrush}{Presence of genital thrush (Yes, No)}
+#' \item{visual_blurring}{Presence of visual blurring (Yes, No)}
+#' \item{itching}{Presence of itching (Yes, No)}
+#' \item{irritability}{Presence of irritability (Yes, No)}
+#' \item{delayed_healing}{Presence of delayed healing (Yes, No)}
+#' \item{partial_paresis}{Presence of partial paresis (Yes, No)}
+#' \item{muscle_stiffness}{Presence of muscle stiffness (Yes, No)}
+#' \item{alopecia}{Presence of alopecia (Yes, No)}
+#' \item{obesity}{Presence of obesity (Yes, No)}
+#' \item{class}{Diagnosis class (1 if presence of diabetes, 0 otherwise)}
+#' }
+#'
+#' @references Islam, M. M. F., et al. "Likelihood prediction of diabetes at early stage using data mining techniques", Computer vision and machine intelligence in medical image analysis, (2020).
+#' @source \url{https://link.springer.com/chapter/10.1007/978-981-13-8798-2_12}
+"diabetes"
+#'
+
+
+
+#' Kuwait Blood Pressure
+#' @description This dataset contains a collection of variables believed to be potentially associated with the blood pressure measurements of 213 individuals from Kuwait. The dataset lists the following variables:
+#'
+#'
+#' @format
+#' \describe{
+#' \item{age}{Age in years}
+#' \item{weight}{Weight in kg}
+#' \item{height}{Height in mm}
+#' \item{chin}{Chin skinfold in cm}
+#' \item{forearm}{Forearm skinfold in cm}
+#' \item{calf}{Calf skinfold in cm}
+#' \item{pulse}{Resting pulse rate}
+#' \item{left_handed}{Whether or not the participant is left-handed}
+#' \item{bmi}{The Body Mass Index (BMI) of the participant}
+#' \item{systol}{Systolic blood pressure}
+#' }
+#'
+"kuwait_bp"
+#'
