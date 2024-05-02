@@ -15,7 +15,7 @@
 #' }
 #'
 #' @references Parisi, Nicolas, et al. "Non applicability of validated predictive models for intensive care admission and death of COVID-19 patients in a secondary care hospital in Belgium.", Journal of Emergency and Critical Care Medicine, (2021).
-#' @source \url{https://jeccm.amegroups.com/article/view/6927/html}
+#' @source \url{https://jeccm.amegroups.org/article/view/6927/html}
 "covid"
 #'
 
