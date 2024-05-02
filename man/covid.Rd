@@ -15,7 +15,7 @@ A data frame with 64 rows and 5 variables:
 }
 }
 \source{
-\url{https://jeccm.amegroups.com/article/view/6927/html}
+\url{https://jeccm.amegroups.org/article/view/6927/html}
 }
 \usage{
 covid
