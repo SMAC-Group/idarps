@@ -183,4 +183,4 @@ boxplot(JapaneseBP$Systol)
 
 centenarian = JapaneseBP
 colnames(centenarian)
-save(centenarian, file = "data/centenarian.rda")
+save(centenarian, file = "data/centenarian.RData")
