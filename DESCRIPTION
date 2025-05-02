@@ -1,7 +1,7 @@
 Package: idarps
 Type: Package
 Title: Datasets and Functions for the Class "Modelling and Data Analysis for Pharmaceutical Sciences"
-Version: 0.0.4
+Version: 0.0.5
 Authors@R: c(
     person("Lionel", "Voirol", email = "lionelvoirol@hotmail.com", role = c("aut", "cre")),
     person("Stéphane", "Guerrier", role = "aut"),
@@ -14,4 +14,4 @@ Description: Provides datasets and functions for the class "Modelling and Data A
 License: AGPL-3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1

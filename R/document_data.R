@@ -340,3 +340,27 @@
 #'
 "kuwait_bp"
 #'
+
+
+
+
+
+
+#' Centenarian Blood Pressure
+#' @description This dataset consists of variables that are potentially related to blood pressure measurements and contains one group of patients aged between 52 and 89 years old who live in urban areas, and another group of 50 centenarian women aged between 101-121 who live in the island of Okinawa, which is known for its high number of centenarians.The dataset lists the following variables:
+#'
+#'
+#' @format
+#' \describe{
+#' \item{Age}{Age in years}
+#' \item{Chin}{Chin skinfold in cm}
+#' \item{Forearm}{Forearm skinfold in cm}
+#' \item{Calf}{Calf skinfold in cm}
+#' \item{Pulse}{Resting pulse rate}
+#' \item{BMI}{The Body Mass Index (BMI) of the participant}
+#' \item{Centenarian}{A dummy variable indicating if the participant is Centenarian}
+#' \item{Cystol}{Systolic blood pressure}
+#' }
+#'
+"centenarian"
+#'
