@@ -14,4 +14,6 @@ Description: Provides datasets and functions for the class "Modelling and Data A
 License: AGPL-3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
+Depends: 
+    R (>= 3.5)

@@ -7,3 +7,4 @@ scripts
 static
 data-raw
 
+^data-raw$
