@@ -15,7 +15,7 @@
 }
 }
 \source{
-\url{https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1}
+\url{https://link.springer.com/article/10.1186/s12885-017-3877-1}
 }
 \usage{
 BreastCancer

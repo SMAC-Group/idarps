@@ -279,7 +279,7 @@
 #' }
 #'
 #' @references Patricio, Miguel, et al. "Using Resistin, glucose, age and BMI to predict the presence of breast cancer", BMC Cancer, (2018).
-#' @source \url{https://bmccancer.biomedcentral.com/articles/10.1186/s12885-017-3877-1}
+#' @source \url{https://link.springer.com/article/10.1186/s12885-017-3877-1}
 "BreastCancer"
 #'
 #'
